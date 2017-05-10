@@ -23,4 +23,16 @@
         android:layout_marginTop="1dp"
         android:background="#FDFDFD"
         android:text="注销账号"/>
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancel_account"
+        android:gravity="center"
+        android:background="#FDFDFD"
+        android:textSize="20dp"
+        android:padding="7sp"
+        android:text="设置"
+        android:layout_marginTop="2dp"
+        android:layout_margin="3dp"/>
 </RelativeLayout>

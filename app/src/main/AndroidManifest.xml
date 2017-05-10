@@ -42,7 +42,8 @@
         <activity android:name=".Settings" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AccountAndSecurity" />
-        <activity android:name=".SetPassword"></activity>
+        <activity android:name=".SetPassword" />
+        <activity android:name=".Accomplish"></activity>
     </application>
 
 </manifest>
