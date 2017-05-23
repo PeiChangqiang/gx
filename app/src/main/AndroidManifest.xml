@@ -38,12 +38,16 @@
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name=".ChangePhoneNumber" />
+        <activity android:name=".AccountChange" />
         <activity android:name=".Settings" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AccountAndSecurity" />
         <activity android:name=".SetPassword" />
-        <activity android:name=".Accomplish"></activity>
+        <activity android:name=".Accomplish" />
+        <activity android:name="activitytest.example.com.common.title" />
+        <activity android:name="activitytest.example.com.common.AboutApp" />
+        <activity android:name=".TimeActivity" />
+        <activity android:name=".FaultActivity"></activity>
     </application>
 
 </manifest>

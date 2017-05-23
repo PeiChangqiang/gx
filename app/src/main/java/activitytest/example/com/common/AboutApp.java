@@ -1,22 +1,19 @@
-package activitytest.example.com.gloryscience;
+package activitytest.example.com.common;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
+import activitytest.example.com.gloryscience.R;
 
 
-public class SetPassword extends AppCompatActivity {
+public class AboutApp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.set_password);
+        setContentView(R.layout.about_app);
         TextView textView = (TextView) findViewById(R.id.common_title);
-        textView.setText("设置密码");
-
+        textView.setText("关于软件");
     }
 }

@@ -5,22 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="activitytest.example.com.gloryscience.AccountAndSecurity">
-    <include layout="@layout/commonhead"
-        android:id="@+id/in"/>
-    <Button
+    <activitytest.example.com.common.CommonTitle
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
         android:id="@+id/update_account"
         android:layout_width="match_parent"
+        android:padding="4dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/in"
         android:background="#FDFDFD"
+        android:textSize="16sp"
         android:layout_marginTop="8dp"
         android:text="修改账号信息"/>
-    <Button
+    <TextView
         android:id="@+id/cancel_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/update_account"
         android:layout_marginTop="1dp"
+        android:textSize="16sp"
+        android:padding="4dp"
         android:background="#FDFDFD"
         android:text="注销账号"/>
     <TextView
@@ -33,6 +40,18 @@
         android:textSize="20dp"
         android:padding="7sp"
         android:text="设置"
+        android:layout_marginTop="2dp"
+        android:layout_margin="3dp"/>
+    <TextView
+        android:id="@+id/testText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/testText"
+        android:gravity="center"
+        android:background="#FDFDFD"
+        android:textSize="20dp"
+        android:padding="7sp"
+        android:text="设置2"
         android:layout_marginTop="2dp"
         android:layout_margin="3dp"/>
 </RelativeLayout>

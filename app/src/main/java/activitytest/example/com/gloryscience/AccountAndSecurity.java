@@ -1,13 +1,11 @@
 package activitytest.example.com.gloryscience;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class AccountAndSecurity extends AppCompatActivity {
 
@@ -15,39 +13,22 @@ public class AccountAndSecurity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_and_security);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null) {
+            actionBar.hide();
+        }
         TextView textView = (TextView) findViewById(R.id.common_title);
         textView.setText("账号与安全");
         //跳转到修改账号信息的页面
-        Button updateAccount = (Button) findViewById(R.id.update_account);
+        TextView updateAccount = (TextView) findViewById(R.id.update_account);
         updateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountAndSecurity.this, ChangePhoneNumber.class);
+                Intent intent = new Intent(AccountAndSecurity.this, AccountChange.class);
                 startActivity(intent);
             }
         });
 
-        /**
-         * 跳转到注销账号的页面
-         */
-        Button cancelAccount = (Button) findViewById(R.id.cancel_account);
-        cancelAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AccountAndSecurity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-        /**
-         *当返回的时候销毁该活动
-         */
-        Button button = (Button) findViewById(R.id.back);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
         TextView tv = (TextView) findViewById(R.id.testText);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,5 +37,35 @@ public class AccountAndSecurity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        /**
+         * test 跳转到故障详情页面
+         */
+        TextView tv2 = (TextView) findViewById(R.id.testText2);
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccountAndSecurity.this, FaultActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
+        /*
+         * 跳转到注销账号的页面
+        * /
+        /*TextView cancelAccount = (TextView) findViewById(R.id.cancel_account);
+        cancelAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AccountAndSecurity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });*/
+
+
+
+
+
