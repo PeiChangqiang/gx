@@ -33,10 +33,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="成之路202弄29号203 距您500米 约好15:00上门"/>
-        <ImageView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/nav_call"/>
+            android:layout_margin="5dp"
+            android:src="@drawable/phone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ff6666"
+                android:text="电话 : 17769863214"/>
+        </LinearLayout>
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
@@ -52,10 +63,32 @@
         android:layout_height="wrap_content"
         android:text="The culprit is malware called WannaCry and seems to have spread via a computer virus known as a worm. Unlike many other malicious programs, this one has the ability to move around a network by itself"/>
     <Button
+        android:id="@+id/bt_accomplish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="完成"
         android:layout_marginTop="90dp"
         android:textColor="#fff"/>
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
 
+       <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+    <TextView
+        android:id="@+id/cancel_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:gravity="bottom"
+        android:text="退单"
+        android:textSize="15dp"
+        android:padding="2dp"
+        android:textColor="#ff0000"/>
 </LinearLayout>

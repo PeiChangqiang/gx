@@ -25,7 +25,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="上海">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,10 +44,11 @@
         <activity android:name=".AccountAndSecurity" />
         <activity android:name=".SetPassword" />
         <activity android:name=".Accomplish" />
-        <activity android:name="activitytest.example.com.common.title" />
         <activity android:name="activitytest.example.com.common.AboutApp" />
         <activity android:name=".TimeActivity" />
-        <activity android:name=".FaultActivity"></activity>
+        <activity android:name=".FaultActivity" />
+        <activity android:name=".SpinnerReason"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"/>
     </application>
 
 </manifest>

@@ -21,7 +21,6 @@ import java.util.Date;
 
 public class Accomplish extends Activity {
 
-    //private static final int DIALOG = 1;
 
     TextView tv_door_time;
     LinearLayout layout_doortime;
@@ -53,17 +52,7 @@ public class Accomplish extends Activity {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 hh:mm");
         String now = sdf.format(date);
         tv_door_time.setText("上门时间  " + now);
-        /*tv_door_time.setOnTouchListener(new View.OnTouchListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    showDatelog();
-                    return true;
-                }
-                return false;
-            }
-        });*/
+
         layout_doortime = (LinearLayout) findViewById(R.id.layout_doortime);
         layout_doortime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,15 +61,7 @@ public class Accomplish extends Activity {
                 startActivityForResult(intent, 1);
             }
         });
-        /*tv_door_time.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(hasFocus) {
-                    showDatelog();
-                }
-            }
-        });*/
+
     }
 
     @Override
@@ -96,16 +77,4 @@ public class Accomplish extends Activity {
         }
     }
 
-    /*@RequiresApi(api = Build.VERSION_CODES.N)
-    protected void showDatelog() {
-        Calendar calendar = Calendar.getInstance();
-        DatePickerDialog datePickerDialog = new DatePickerDialog(Accomplish.this,
-                new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                Accomplish.this.tv_door_time.setText("上门时间  " + year + "年" + ++month + "月" + dayOfMonth + "日");
-            }
-        }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
-        datePickerDialog.show();
-    }*/
 }

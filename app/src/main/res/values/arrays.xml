@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>点错了</item>
+        <item>不想做了</item>
+        <item>技术问题无法做</item>
+        <item>就是想罢工</item>
+    </string-array>
+</resources>

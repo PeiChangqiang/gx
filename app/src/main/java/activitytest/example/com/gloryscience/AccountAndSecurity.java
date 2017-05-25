@@ -33,23 +33,11 @@ public class AccountAndSecurity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountAndSecurity.this, Accomplish.class);
-                startActivity(intent);
-            }
-        });
-
-
-        /**
-         * test 跳转到故障详情页面
-         */
-        TextView tv2 = (TextView) findViewById(R.id.testText2);
-        tv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 Intent intent = new Intent(AccountAndSecurity.this, FaultActivity.class);
                 startActivity(intent);
             }
         });
+
 
     }
 }

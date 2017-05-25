@@ -17,7 +17,7 @@
         android:textSize="15sp"/>-->
     <ImageView
         android:id="@+id/back_arrow"
-        android:layout_width="29dp"
+        android:layout_width="40dp"
         android:layout_height="27dp"
         android:padding="6dp"
         android:layout_gravity="center"
@@ -27,7 +27,7 @@
         android:id="@+id/common_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="29dp"
+        android:layout_marginRight="40dp"
         android:gravity="center"
         android:padding="6dp"
         android:textColor="#000"
